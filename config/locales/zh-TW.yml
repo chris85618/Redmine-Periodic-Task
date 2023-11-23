@@ -1,0 +1,42 @@
+# Coding：UTF-8
+# Traditional Chinese strings go here for Rails i18n
+# Translated from Tomora's Simplified Chinese by chris85618.
+zh-TW:
+  label_tracker: 追蹤標籤
+  label_author: 作者
+  label_assigned_to_user: 被分派給
+  no_members_in_project: 該專案沒有成員
+  no_categories_in_project: 該專案沒有分類
+  label_subject: 主旨
+  label_next_run_date: 下一執行日(yyyy-mm-dd hh:mm:ss, 伺服器時區)
+  label_edit_periodic_task: 編輯週期任務
+  label_new_periodic_task: 建立週期任務
+  label_no_members_in_project: 該專案沒有成員
+  label_no_categories_in_project: 該專案沒有分類
+  label_periodic_tasks: 週期任務
+  label_create_periodic_task: 建立
+  label_save_periodic_task: 儲存
+  label_scheduled_tasks: 目前計劃的任務
+  label_no_project: 沒有提供專案標籤
+  label_remove_periodic_task: 刪除週期任務
+  label_interval: 間隔
+  label_set_start_date: 設定開始日期
+  label_due_date: 設定完成日期
+  label_estimated_hours: 預估工時
+  label_estimated_hours_after: 小時
+  label_description: 概述
+  label_issue_category: 問題分類
+  label_unit_day: 天
+  label_business_day: 工作日
+  label_unit_week: 週
+  label_unit_month: 月
+  label_unit_year: 年
+  flash_task_created: 已創建週期任務
+  flash_task_saved: 週期任務已儲存
+  subject_variables: 可選值是：**DAY** (01-31), **WEEK** (01-53), **MONTH** (01-12), **MONTHNAME** and **PREVIOUS_MONTHNAME** (一月 - 十二月), **YEAR** (YYYY)
+  label_last_error: 最後錯誤
+  label_issue_custom_fields: 自訂欄位
+  label_parent_id: 父議題
+  label_priority: 優先權
+  label_priority_default: (預設 - 正常)
+  label_watchers: 監看員

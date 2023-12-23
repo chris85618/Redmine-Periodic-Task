@@ -26,6 +26,7 @@ zh:
   label_estimated_hours_after: 小時
   label_description: 概述
   label_issue_category: 問題分類
+  label_parent_id: 父議題
   label_unit_day: 天
   label_business_day: 工作日
   label_unit_week: 週

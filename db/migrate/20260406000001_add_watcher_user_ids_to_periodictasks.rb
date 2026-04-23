@@ -2,7 +2,7 @@ active_record_migration_class = ActiveRecord::Migration.respond_to?(:current_ver
 
 class AddWatcherUserIdsToPeriodictasks < active_record_migration_class
   def self.up
-    add_column :periodictasks, :watcher_user_ids, :json
+    add_column :periodictasks, :watcher_user_ids, :json, :default => [], :null => false
   end
 
   def self.down

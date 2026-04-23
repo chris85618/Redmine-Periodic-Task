@@ -80,7 +80,8 @@ class Periodictask < ActiveRecord::Base
     val = next_run_date || now
     if units == 'business_day'
       while val <= now
-        val = interval_number.business_day.after(val)
+        hour, min, sec = val.hour, val.min, val.sec
+        val = interval_number.business_day.after(val).change(hour: hour, min: min, sec: sec)
       end
     else
       interval_steps = ((now - val) / interval_number.send(units)).ceil

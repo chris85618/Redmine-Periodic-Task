@@ -1,5 +1,11 @@
 # Changelog
 
+## v6.1.3 - 2026-05-08
+
+### Fixes
+
+- Fix edit page crash when `watcher_user_ids` is `nil` in legacy records ([#134](https://github.com/jperelli/Redmine-Periodic-Task/issues/134)) (@jperelli)
+
 ## v6.1.2 - 2026-04-10
 
 ### Fixes

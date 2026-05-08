@@ -84,6 +84,14 @@ class PeriodictaskControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  def test_edit_with_nil_watcher_user_ids
+    task = create_test_periodictask
+    task.update_column(:watcher_user_ids, nil)
+
+    get :edit, params: { project_id: 'ecookbook', id: task.id }
+    assert_response :success
+  end
+
   def test_update
     task = create_test_periodictask
     patch :update, params: {

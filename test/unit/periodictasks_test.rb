@@ -517,6 +517,22 @@ class PeriodictasksTest < ActiveSupport::TestCase
     assert_equal [], task.watcher_user_ids
   end
 
+  def test_watcher_user_ids_handles_persisted_nil
+    task = Periodictask.create!(
+      project: @project,
+      tracker_id: 1,
+      author_id: 1,
+      subject: 'Nil watchers test',
+      interval_number: 1,
+      interval_units: 'month',
+      watcher_user_ids: [1]
+    )
+    task.update_column(:watcher_user_ids, nil)
+    task.reload
+
+    assert_equal [], task.watcher_user_ids
+  end
+
   def test_periodictask_stores_watcher_user_ids
     task = Periodictask.create!(
       project: @project,

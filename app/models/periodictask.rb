@@ -7,6 +7,10 @@ class Periodictask < ActiveRecord::Base
   serialize :custom_field_values
   attribute :watcher_user_ids, :json, default: []
 
+  def watcher_user_ids
+    Array(super).map(&:to_i).reject(&:zero?)
+  end
+
   def watcher_user_ids=(value)
     super(Array(value).map(&:to_i).reject(&:zero?))
   end
